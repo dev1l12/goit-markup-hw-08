@@ -1,0 +1,64 @@
+.footer-form {
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and (min-width: 1200px) {
+
+        width: 570px;
+        margin-left: auto;
+    }
+
+    &__titel {
+        margin-bottom: 20px;
+        color: $whiteTextColor;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+}
+
+.mailing {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 0 160px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: stretch;
+    }
+
+}
+
+.mailing__input {
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    border: $borderFooterMailing;
+    border-radius: 4px;
+    background-color: transparent;
+
+    color: $mailingTextColor;
+
+
+    &:focus {
+        @media screen and (max-width: 1199px) {
+            border: $borderFooterMailing;
+        }
+    }
+
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    &::placeholder {
+        color: $mailingTextColor;
+
+        font-size: 16px;
+        line-height: 1.25px;
+    }
+}

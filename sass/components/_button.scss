@@ -1,0 +1,68 @@
+.hero__button,
+.footer__button,
+.modal__button {
+    @extend %button;
+
+    min-width: 200px;
+    padding: 10px 32px;
+    background-color: $accentColor;
+    color: $whiteTextColor;
+    cursor: pointer;
+
+    transition: background-color $transition, color $transition;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    &:hover,
+    &:focus {
+        background-color: $accentColorSecondary;
+        color: $whiteTextColor;
+    }
+}
+
+.footer__button {
+    padding: 10px 29px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+    }
+}
+
+.button__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.modal__button {
+    box-shadow: $boxShadow;
+}
+
+.works__button {
+    @extend %button;
+    padding: 6px 22px;
+    background-color: $bgSecondaryColor;
+    color: $secondaryTextColor;
+    cursor: pointer;
+
+    transition: background-color $transition, color $transition,
+        box-shadow $transition;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+
+    &--current,
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        color: $whiteTextColor;
+        box-shadow: $boxShadowWorksNav;
+    }
+}

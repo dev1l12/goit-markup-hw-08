@@ -1,0 +1,16 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titel {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: $secondaryTextColor;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    }
+}

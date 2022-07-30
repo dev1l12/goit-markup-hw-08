@@ -1,0 +1,30 @@
+.backdrop-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: $borderBackdropButton;
+    background-color: $bgPrimaryColor;
+    cursor: pointer;
+}
+
+.backdrop-button__icon {
+    width: 18px;
+    height: 18px;
+    transition: fill $transition;
+
+    .backdrop-button:hover & {
+        fill: $accentColor;
+    }
+}
+

@@ -1,0 +1,40 @@
+.address {
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+
+
+    &__list {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+    }
+}
+
+.address__link {
+    color: $addressColor;
+    transition: color $transition;
+
+    &:hover,
+    &:hover {
+        color: $accentColor;
+    }
+
+    &--map {
+        color: $whiteTextColor;
+        transition: color $transition;
+    }
+}

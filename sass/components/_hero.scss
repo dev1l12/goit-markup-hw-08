@@ -1,0 +1,82 @@
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
+
+    background-color: $bgImgColor;
+    background-image: linear-gradient(to right, $bgLinearGradient, $bgLinearGradient),
+    url(../images/bg/bg-mobile/bg-mobile.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, $bgLinearGradient, $bgLinearGradient),
+            url(../images/bg/bg-mobile/bg-mobile@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, $bgLinearGradient, $bgLinearGradient),
+            url(../images/bg/bg-tablet/bg-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, $bgLinearGradient, $bgLinearGradient),
+                url(../images/bg/bg-tablet/bg-tablet@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding: 200px 0;
+        background-image: linear-gradient(to right, $bgLinearGradient, $bgLinearGradient),
+            url(../images/bg/bg-desktop/bg-desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, $bgLinearGradient, $bgLinearGradient),
+                url(../images/bg/bg-desktop/bg-desktop@2x.jpg);
+        }
+    }
+}
+
+.hero__title {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: $whiteTextColor;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+
+        font-size: 44px;
+        line-height: 1.5;
+    }
+
+}

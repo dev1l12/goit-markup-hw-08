@@ -1,0 +1,21 @@
+.menu-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-nav__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+
+    color: $secondaryTextColor;
+    transition: color $transition;
+
+    &--current {
+        color: $accentColor;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}

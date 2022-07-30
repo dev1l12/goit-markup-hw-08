@@ -1,0 +1,26 @@
+.menu-links {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.menu-links__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    color: $accentColor;
+    cursor: pointer;
+}
+
+.menu-links__link::after {
+    position: absolute;
+    right: -10px;
+    display: inline-block;
+    content: '';
+    border: $borderModelInput;
+    height: 22px;
+}
